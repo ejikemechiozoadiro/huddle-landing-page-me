@@ -46,3 +46,10 @@ h3{
 .link-underline:hover{
     text-decoration: underline;
 }
+
+
+/*Lists*/
+.list{
+    list-style: none;
+    padding-left: 0;
+}
