@@ -119,3 +119,22 @@ h3{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+.callout{
+    align-items: center;
+    border-radius: 11px;
+    box-shadow: 0 0 15px var(--color-grey);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width:768px){
+    .callout .btn{
+        margin-top: 0;
+    }
+}
