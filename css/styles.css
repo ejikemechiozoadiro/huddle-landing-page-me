@@ -23,6 +23,10 @@ body{
     /*this also applies to the callout section*/
 }
 
+main{
+    position: relative;
+}
+
 .logo{
     width: 150px;
     height: 25px;
@@ -136,13 +140,16 @@ h3{
 .callout{
     align-items: center;
     border-radius: 11px;
-    box-shadow: 0 0 15px var(--color-grey);
+    box-shadow: 0 -3px 10px var(--color-grey);
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     max-width: 450px;
     padding: 2rem;
     text-align: center;
+    background: var(--color-white);
+    position: relative;
+    bottom: -8rem;
 }
 
 @media screen and (min-width:768px){
@@ -173,6 +180,7 @@ h3{
     text-align: center;
     color: var(--color-headings);
     padding-bottom: 6rem;
+    margin-bottom: 9.5rem;
 }
 
 @media screen and (min-width:768px){
@@ -210,11 +218,19 @@ h3{
 .card{
     padding: 7rem 5rem 4rem;
     text-align: center;
-    box-shadow: 0 0 15px var(--color-grey);
+    box-shadow: 0 0 10px var(--color-grey);
     max-width: 310px;
     margin: 3rem auto;
-    border-radius: 15px;
+    border-radius: 10px;
 }
+
+
+@media screen and (min-width:600px){
+    .card{
+        max-width: 450px;
+    }
+}
+
 
 @media screen and (min-width:768px){
     .card{
@@ -224,7 +240,7 @@ h3{
 
 @media screen and (min-width:1024px){
     .card{
-        max-width: 800px;
+        max-width: 1024px;
     }
 }
 
