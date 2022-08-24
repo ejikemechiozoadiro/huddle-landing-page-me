@@ -202,3 +202,37 @@ h3{
         gap: 3rem;
     }
 }
+
+
+
+/*Cards*/
+.card{
+    padding: 7rem 5rem 4rem;
+    text-align: center;
+    box-shadow: 0 0 15px var(--color-grey);
+    max-width: 310px;
+    margin: 3rem auto;
+    border-radius: 15px;
+}
+
+@media screen and (min-width:768px){
+    .card{
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .card{
+        max-width: 800px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .card{
+        max-width: 1140px;
+    }
+}
+
+.card img{
+    width: 100%;
+}
