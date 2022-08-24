@@ -121,6 +121,8 @@ h3{
 }
 
 
+
+/*Callouts*/
 .callout{
     align-items: center;
     border-radius: 11px;
@@ -137,4 +139,22 @@ h3{
     .callout .btn{
         margin-top: 0;
     }
+}
+
+
+
+/*Navigation*/
+.nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.nav__logo{
+    width: 150px;
+    height: 25px;
+}
+
+.nav__btn{
+    margin: 0;
 }
