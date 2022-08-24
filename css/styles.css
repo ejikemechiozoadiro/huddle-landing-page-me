@@ -1,3 +1,6 @@
+/*Don't forget to set img elelment's width
+ to 100% to avoid stupid layout issues.*/
+
 :root{
     --color-primary: hsl(322, 100%, 66%);
     --color-headings: hsl(192, 100%, 9%);
@@ -16,6 +19,7 @@ body{
     color: var(--color-body);
     font-size: 1.8rem;
     line-height: 1.5;
+    margin: 0;
     /*this also applies to the callout section*/
 }
 
@@ -157,4 +161,44 @@ h3{
 
 .nav__btn{
     margin: 0;
+}
+
+
+
+/*Hero*/
+.hero{
+    background-color: var(--color-background);
+    background-image: url(../images/bg-hero-mobile.svg);
+    text-align: center;
+    color: var(--color-headings);
+    padding-bottom: 6rem;
+}
+
+@media screen and (min-width:768px){
+    .hero{
+        background-color: var(--color-background);
+        background-image: url(../images/bg-hero-desktop.svg);
+    } 
+}
+
+.hero__content{
+    padding: 0 4rem;
+}
+
+.hero__header{
+    padding: 2rem 2.5rem 8rem;
+}
+
+.hero__image{
+    width: 100%;
+}
+
+.hero .grid{
+    justify-items: center;
+}
+
+@media screen and (min-width:768px){    
+    .hero .grid {
+        gap: 3rem;
+    }
 }
